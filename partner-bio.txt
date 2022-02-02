@@ -1,5 +1,0 @@
-Keith Benjamin
-
-Keith is from Houston and attributes his interest in tech to his hobby of modding his favorite video games.
-This is what motivated him to join codeup and pursue a career in web development.  Keith hopes that his skills
-can someday help him pursue other projects in addition to his development career.
