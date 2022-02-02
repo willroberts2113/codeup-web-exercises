@@ -1,5 +1,9 @@
 Keith Benjamin
 
 Keith is from Houston and attributes his interest in tech to his hobby of modding his favorite video games.
-This is what motivated him to join codeup and pursue a career in web development.  Keith hopes that his skills
-can someday help him pursue other projects in addition to his development career.
+This is what motivated him to join codeup and pursue a career in web development.  
+Keith hopes that his skills can someday help him pursue other projects in addition to his development career.
+He considers his dedication and perserverence to be his key strengths, and his lack of experience as his main weakness.
+Keith is a veteran of the military and attributes this and his time modding games as experiences that helped prepare him for codeup.
+His dream job is to work for a company with great work-life balance.
+When it comes to where he gets his latest info and news on technology he mainly uses google and reddit.
