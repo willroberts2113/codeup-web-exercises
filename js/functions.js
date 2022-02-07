@@ -108,7 +108,7 @@ alert("Your calculated tip is: $" + (calculateTip(totalBill, tipPercentage)));
  */
 
 let originalPrice = 100;
-let discountPercent = (Math.random() * (.01 - .001)).toFixed(4);
+let discountPercent = (Math.random() * (.01 - .001) + .001).toFixed(4);
 function applyDiscount(originalPrice, discountPercent){
     let discount = originalPrice * discountPercent;
     return discount;
