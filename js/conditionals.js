@@ -206,7 +206,7 @@ function getNumber(){
             }else{
                 alert("Your number is an odd number.");
             }
-            alert("Your number when multiplied by 100 is: " + (numInput * 100) + ".");
+            alert("Your number when added to 100 is: " + (numInput + 100) + ".");
             if(numInput < 0){
                 alert("Your number is a negative number.");
             }
