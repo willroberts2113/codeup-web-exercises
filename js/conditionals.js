@@ -127,33 +127,36 @@ function requestColor(){
  */
 
 let luckyNumber = Math.floor(Math.random() * 6);
-let totalAmount = 100
-/*console.log(luckyNumber)
-console.log(totalAmount - (totalAmount * .1))
-console.log(totalAmount - (totalAmount * .25))
-console.log(totalAmount - (totalAmount * .35))
- */
+let totalAmount = prompt("What is your total bill is dollars?:  ");
+let newAmount = 0;
 
 function calculateTotal(luckyNumber, totalAmount) {
-    switch (luckyNumber){
+    switch (luckyNumber) {
         case(1):
-            console.log("You receive a 10% discount!  Your total is: " + totalAmount - (totalAmount * .1));
+            newAmount = totalAmount - totalAmount * .1;
+            console.log("You receive a 10% discount!  Your new total is: $" + newAmount);
             break;
         case(2):
-            console.log("You receive a 25% discount!  Your total is: " + totalAmount - (totalAmount * .25));
+            newAmount = totalAmount - totalAmount * .25;
+            console.log("You receive a 25% discount!  Your new total is: $" + newAmount);
             break;
         case(3):
-            console.log("You receive a 35% discount!  Your total is: " + totalAmount - (totalAmount * .35));
+            newAmount = totalAmount - totalAmount * .35;
+            console.log("You receive a 35% discount!  Your new total is: $" + newAmount);
             break;
         case(4):
-            console.log("You receive a 50% discount!  Your total is: " + totalAmount - (totalAmount * .5));
+            newAmount = totalAmount - totalAmount * .5;
+            console.log("You receive a 50% discount!  Your new total is: $" + newAmount);
             break;
         case(5):
             console.log("You receive a 100% discount!  Everything is Free!");
             break;
         default:
-            console.log("Unfortunately, you do not qualify for a discount.  Your total is: " + totalAmount)
+            console.log("Unfortunately, you do not qualify for a discount.  Your total is: $" + totalAmount)
     }
+    alert("Your lucky number was " + luckyNumber + ".");
+    alert("Your original price was $" + totalAmount + ".");
+    alert("Your price after discount is $" + newAmount + ".");
 }
 
 calculateTotal(luckyNumber, totalAmount)
@@ -187,3 +190,30 @@ calculateTotal(luckyNumber, totalAmount)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+let provideNumber = confirm("Would you like to add a number?");
+
+function getNumber(provideNumber){
+    while (provideNumber) {
+        let numInput = prompt("What is your number?");
+        if (numInput === !NaN) {
+            alert("That is not a number.  Please try again.");
+        }else{
+            if(numInput % 2 == 0){
+                alert("Your number is an even number.");
+            }else{
+                alert("Your number is an odd number.");
+            }
+            alert("Your number when multiplied by 100 is: " + (numInput * 100) + ".");
+            if(numInput < 0){
+                alert("Your number is a negative number.");
+            }
+            else{
+                alert("Your number is a positive number.");
+            }
+            return provideNumber = false;
+        }
+    }
+}
+
+getNumber(provideNumber);
