@@ -191,12 +191,11 @@ calculateTotal(luckyNumber, totalAmount)
  * HINT: The way we prompt for a value could be improved
  */
 
-let provideNumber = confirm("Would you like to add a number?");
-
-function getNumber(provideNumber){
+function getNumber(){
+    let provideNumber = confirm("Would you like to add a number?");
     while (provideNumber) {
         let numInput = prompt("What is your number?");
-        if (numInput === !NaN) {
+        if (isNaN(numInput)){
             alert("That is not a number.  Please try again.");
         }else{
             if(numInput % 2 == 0){
@@ -211,9 +210,9 @@ function getNumber(provideNumber){
             else{
                 alert("Your number is a positive number.");
             }
-            return provideNumber = false;
+            provideNumber = false;
         }
     }
 }
 
-getNumber(provideNumber);
+getNumber();
