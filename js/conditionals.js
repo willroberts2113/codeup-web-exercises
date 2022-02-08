@@ -193,6 +193,9 @@ calculateTotal(luckyNumber, totalAmount)
 
 function getNumber(){
     let provideNumber = confirm("Would you like to add a number?");
+    if(!provideNumber){
+        alert("Ok, bye!");
+    }
     while (provideNumber) {
         let numInput = prompt("What is your number?");
         if (isNaN(numInput)){
