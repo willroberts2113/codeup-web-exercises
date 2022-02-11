@@ -1,7 +1,29 @@
 "use strict";
 
-let numInput = prompt("Please provide a number between 1 and 50:  ");
 
-function breakAndContinue(){
+let addNumber = promptForOddNumberInRange(1, 50);
+let oddNumber = prompt("Please provide an odd number:  ");
+
+printOddNumbersInRangeWithSkip(1, 50, oddNumber);
+
+function printOddNumbersInRangeWithSkip(low, high, skipNumber) {
+    for(let i = 0; i <= high; i = i + 2) {
+        if (i === skipNumber && i % 2 === 0) {
+            if(i === skipNumber){
+
+            }
+        }
+    }
+}
+
+function promptForOddNumberInRange(low, high) {
+    let result;
+    while(true){
+        result = prompt("Enter an odd number from " + low + " to " + high);
+        if (result !== null && result % 2 === 1 && result >= low && result <= high) {
+            break;
+        }
+    }
+    return result;
 
 }
