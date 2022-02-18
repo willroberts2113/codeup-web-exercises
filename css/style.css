@@ -1,4 +1,47 @@
 .fancy-header {
-    color: purple; /* single line comment */
+    color: lightblue; /* single line comment */
     text-decoration: underline;
 }
+
+body {
+    background-color: #FF0000;
+    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/11/86/tjcrJY.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Fantasy', Papyrus;
+    color: lightgreen;
+}
+
+th, td {
+    border: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: yellowgreen;
+}
+
+a:visited {
+    color: deeppink;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+}
+
+a:active {
+    background: #265301;
+    color: #CDFEAA;
+}
+
