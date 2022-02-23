@@ -13,6 +13,7 @@ body, html {
 form {
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
+    background-color: white;
 }
 
 fieldset {
@@ -36,6 +37,8 @@ fieldset {
 
 .form-label {
     /* The text of a label must be bold */
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .btn-block {
