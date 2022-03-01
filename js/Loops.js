@@ -13,3 +13,20 @@
 // Yay! I sold them all! // If there are no more cones
 
 
+function sellCones() {
+    let allCones = Math.floor(Math.random() * 50) + 50;
+    do {
+        let conesOrder = Math.floor(Math.random() * 5) + 1;
+        if(conesOrder <= allCones) {
+            allCones = allCones - conesOrder;
+            console.log(conesOrder + " cones sold...");
+        }else {
+            console.log("Sorry I don't have enough cones left to sell you that many...");
+        }
+    } while (allCones > 0);
+    console.log("Yay! I sold them all!");
+}
+
+sellCones()
+
+

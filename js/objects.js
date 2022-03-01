@@ -118,6 +118,10 @@
             }
         }];
 
+console.log(booksAndAuthorsArray[0].name);
+console.log(booksAndAuthorsArray[1].name);
+console.log(booksAndAuthorsArray[2].name);
+
 
     /**
      * TODO:
