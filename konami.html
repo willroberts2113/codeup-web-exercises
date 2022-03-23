@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<p>Enter the Konami Code if you wish to live!</p>
+
+<script src="js/jquery-3.6.0.js"></script>
+<script>
+    "use strict";
+
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+    });
+
+    function konamiCode(x) {
+        let keystroke = "";
+        let cheatCode = "3838404037393739666513";
+        $(document).keydown(function(event) {
+            keystroke += event.keyCode;
+            if (keystroke.indexOf(cheatCode) !== -1) {
+                x();
+                cheatCode = "";
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        konamiCode(function() {
+            alert("Congrats!  You have added 30 lives!");
+        });
+    });
+</script>
+</body>
+</html>

@@ -59,6 +59,16 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+    function first(names) {
+        return names[0];
+    }
 
+    function second(names) {
+        return names[1];
+    }
+
+    function last(names) {
+        return names[names.length - 1];
+    }
 
 })();

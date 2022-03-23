@@ -1,0 +1,2 @@
+const OWM_KEY = "f640d6c1d6dbaf8e54f852f0652cf285";
+const MAP_KEY = "pk.eyJ1Ijoid2lsbHJvYmVydHMyMTEzIiwiYSI6ImNsMHZkNHV0NzBpMjYza210MWZ6NGZ1amQifQ.vLP0p10FsoJ9NENrEbYKzA"
